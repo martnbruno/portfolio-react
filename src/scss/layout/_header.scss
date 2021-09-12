@@ -1,0 +1,49 @@
+// Mobile -480px
+.header {
+  background-color: lightblue;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__title {
+    font-size: $font-size-l;
+  }
+  &__subtitle {
+    padding: 1rem;
+    font-size: $font-size-m;
+    z-index: $z-normal;
+    text-align: center;
+  }
+}
+// Tablet +768px
+@include mq(m) {
+  .header {
+    &__subtitle {
+      width: 500px;
+    }
+  }
+}
+// Desktop +1024px
+@include mq(l) {
+  .header {
+    align-items: flex-start;
+    &__title {
+      font-size: $font-size-xl;
+      padding: 1rem 3rem;
+    }
+    &__subtitle {
+      padding: 0 3.2rem;
+      font-size: $font-size-l;
+      width: 750px;
+      text-align: left;
+    }
+    &__button {
+      margin: 3rem !important;
+    }
+  }
+}

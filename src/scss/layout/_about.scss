@@ -1,0 +1,72 @@
+// Mobile from 480px
+.about {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__container {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    &__image {
+      height: 440px;
+      width: 95%;
+      border-radius: 50%;
+      margin: 1em 0;
+    }
+    &__header {
+      color: $color-primary;
+      font-size: $font-size-l;
+    }
+    &__underline {
+      border-bottom: 2px solid $color-primary;
+      width: 40px;
+      margin-bottom: 1em;
+    }
+    &__description {
+      text-align: left;
+      font-size: $font-size-s;
+      letter-spacing: 2px;
+      width: 430px;
+      margin-bottom: 2em;
+    }
+  }
+}
+// Tablet from 768px
+@include mq(m) {
+  .about {
+    &__container {
+      &__image {
+        height: 493px;
+        border-radius: 50%;
+      }
+      &__description {
+        width: 500px;
+      }
+    }
+  }
+}
+
+// Desktop from 1024px
+@include mq(l) {
+  .about {
+    &__container {
+      flex-direction: row;
+      gap: 3em;
+      &__image {
+        height: 400px;
+      }
+    }
+  }
+}
+
+// Widescreen from 1300px
+@include mq(xl) {
+}

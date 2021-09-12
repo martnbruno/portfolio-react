@@ -1,0 +1,7 @@
+.scroll_icon {
+  cursor: pointer;
+  font-size: $font-size-xl;
+  &:hover {
+    color: $color-primary;
+  }
+}

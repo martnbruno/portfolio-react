@@ -1,0 +1,103 @@
+// Mobile
+.nav {
+  .logo {
+    margin-right: auto;
+    &:hover {
+      color: #000;
+    }
+  }
+  &__toggle {
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    margin: 0rem 1rem;
+    padding: 1.6em;
+    position: fixed;
+    z-index: $z-fixed;
+
+    .svg {
+      width: 1.5rem;
+    }
+    .close {
+      display: none;
+    }
+  }
+  &__checkbox {
+    display: none;
+  }
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    z-index: $z-modal;
+    position: absolute;
+    width: 100%;
+    padding: 3em;
+
+    // Transition of height from 0px to 500px when checkbox is clicked.
+    max-height: 0px;
+    transition: max-height 1s ease;
+    position: fixed;
+  }
+  &__element {
+    list-style: none;
+    // <li> remain hidden when menu is not active.
+    overflow: hidden;
+    &:hover {
+      color: $color-primary;
+    }
+  }
+  &__link {
+    text-decoration: none;
+    color: inherit;
+    font-size: $font-size-m;
+    padding: 0.5em;
+  }
+  &__socials {
+    list-style: none;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    #linkedin:hover {
+      color: rgb(45, 45, 180);
+    }
+    #github:hover {
+      color: rgb(80, 79, 79);
+    }
+    #whatsapp:hover {
+      color: rgb(5, 172, 5);
+    }
+  }
+}
+// Transition of height from 0px to 500px when checkbox is clicked.
+#nav__checkbox:checked ~ ul.nav__menu {
+  max-height: 500px;
+  background-color: #fff;
+}
+#nav__checkbox:checked ~ label.nav__toggle .close {
+  display: block;
+}
+#nav__checkbox:checked ~ label.nav__toggle .menu {
+  display: none;
+}
+// Desktop +1024px
+@include mq(l) {
+  .nav {
+    display: flex;
+    align-items: baseline;
+    &__toggle {
+      display: none;
+    }
+    &__menu {
+      flex-direction: row;
+      position: static;
+      justify-content: flex-end;
+      align-items: flex-start;
+    }
+    &__socials {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}

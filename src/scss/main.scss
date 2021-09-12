@@ -1,0 +1,23 @@
+/*
+  This boilerplate is based in ITCSS and SMACSS
+*/
+
+// Config
+@import "config/variables";
+@import "config/functions";
+@import "config/mixins";
+
+// Layout
+@import "layout/base";
+@import "layout/navbar";
+@import "layout/header";
+@import "layout/about";
+@import "layout/projects";
+@import "layout/footer";
+
+// Components
+@import "components/projectslider";
+@import "components/scrollto";
+
+// Theme
+@import "theme/typography";

@@ -1,0 +1,134 @@
+// Mobile -480px
+.project__slider {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 0;
+  .right-arrow {
+    position: absolute;
+    top: 45%;
+    right: 120px;
+    font-size: 3rem;
+    color: #000;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+    &:hover {
+      color: $color-primary;
+    }
+  }
+  .left-arrow {
+    position: absolute;
+    top: 45%;
+    left: 120px;
+    font-size: 3rem;
+    color: #000;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+    &:hover {
+      color: $color-primary;
+    }
+  }
+  &__active {
+    opacity: 1;
+    transition-duration: 2s;
+    transform: scale(1);
+  }
+  &__slide {
+    opacity: 0;
+    transition-duration: 2s ease;
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+    &__image {
+      width: 100%;
+      height: 33vh;
+      border-radius: 10px;
+    }
+    &__title {
+      color: $color-primary;
+      border-bottom: 2px solid $color-primary;
+      padding-top: 2.5em;
+      margin: 0.5em 0;
+      width: 50px;
+      font-size: $font-size-l;
+    }
+    &__subtitle {
+      margin: 1em 0;
+      font-size: $font-size-m;
+    }
+    &__paragraph {
+      font-size: $font-size-s;
+    }
+  }
+  &__button__container {
+    display: flex;
+    justify-content: center !important;
+    text-align: center;
+    padding: 2em 0;
+  }
+}
+// Tablet +768px
+@include mq(m) {
+  .project__slider {
+    .right-arrow {
+      top: 25%;
+      right: -60px;
+    }
+    .left-arrow {
+      top: 25%;
+      left: -60px;
+    }
+    &__card {
+      &__image {
+        height: 40vh;
+      }
+      &__text__container {
+        width: 550px;
+      }
+      &__title {
+        padding-top: 1em;
+      }
+    }
+  }
+}
+// Desktop +1024px
+@include mq(l) {
+  .project__slider {
+    .right-arrow {
+      right: -80px;
+    }
+    .left-arrow {
+      left: -80px;
+    }
+    &__card {
+      &__image {
+        height: 40vh;
+      }
+      &__text__container {
+        width: 500px;
+      }
+    }
+  }
+}
+
+@include mq(xl) {
+  .project__slider {
+    .right-arrow {
+      right: -80px;
+    }
+    .left-arrow {
+      left: -80px;
+    }
+    &__card {
+      &__image {
+        height: 45vh;
+      }
+    }
+  }
+}

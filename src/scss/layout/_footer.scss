@@ -1,0 +1,28 @@
+.footer {
+  display: flex;
+  justify-content: space-around;
+  height: 10vh;
+  &__menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+  }
+  &__element {
+    list-style: none;
+    font-size: $font-size-m;
+  }
+  &__link {
+    color: inherit;
+  }
+
+  #linkedin {
+    color: rgb(45, 45, 180);
+  }
+  #github {
+    color: rgb(80, 79, 79);
+  }
+  #whatsapp {
+    color: rgb(5, 172, 5);
+  }
+}

@@ -1,0 +1,32 @@
+/*Variables*/
+
+/* z-index */
+$z-back: -10;
+$z-normal: 1;
+$z-tooltip: 10;
+$z-fixed: 1500;
+$z-modal: 1000;
+
+/* fuentes */
+$font-family: "Raleway", sans-serif;
+$font-size-xl: 3.5rem;
+$font-size-l: 2rem;
+$font-size-m: 1.3rem;
+$font-size-s: 1rem;
+
+/* Color */
+$color-primary: #e60856;
+$color-important: #d83033;
+$color-urgent: #e2a026;
+$color-no-urgent: #d3df38;
+$color-third: #53be22;
+$color-fourth: rgb(20, 26, 77);
+$color-accent: #004e92;
+
+/* Mq break */
+$breakpoints: (
+  s: 480px,
+  m: 768px,
+  l: 1024px,
+  xl: 1300px,
+);
