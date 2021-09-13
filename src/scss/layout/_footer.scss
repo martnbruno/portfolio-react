@@ -1,3 +1,5 @@
+// Mobile +360px
+
 .footer {
   display: flex;
   justify-content: space-around;
@@ -6,11 +8,11 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
   }
   &__element {
     list-style: none;
-    font-size: $font-size-m;
+    font-size: $font-size-s;
   }
   &__link {
     color: inherit;
@@ -24,5 +26,17 @@
   }
   #whatsapp {
     color: rgb(5, 172, 5);
+  }
+}
+
+// Mobile +480px
+@include mq(s) {
+  .footer {
+    &__menu {
+      gap: 2rem;
+    }
+    &__element {
+      font-size: $font-size-m;
+    }
   }
 }

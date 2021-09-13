@@ -13,6 +13,7 @@ $font-size-xl: 3.5rem;
 $font-size-l: 2rem;
 $font-size-m: 1.3rem;
 $font-size-s: 1rem;
+$font-size-xs: .7rem;
 
 /* Color */
 $color-primary: #e60856;
@@ -25,6 +26,7 @@ $color-accent: #004e92;
 
 /* Mq break */
 $breakpoints: (
+  xs:360px,
   s: 480px,
   m: 768px,
   l: 1024px,

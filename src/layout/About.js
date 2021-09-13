@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import profile from "../assets/profile.jpg";
+import Button from "../components/Button";
 
 const About = () => {
   useEffect(() => {
@@ -36,6 +37,16 @@ const About = () => {
             clients, and that’s the same objective I seek as a developer
             nowadays!
           </p>
+          <div className="about__container__button">
+            <Button
+              text="Resume"
+              color="secondary"
+              size="small"
+              href="https://drive.google.com/file/d/1ZThQprj06TPHKOtBMeIywTg7Y8lAXUb0/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            />
+          </div>
         </div>
       </div>
     </section>

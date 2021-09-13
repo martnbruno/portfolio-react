@@ -1,4 +1,4 @@
-// Mobile -480px
+// Mobile +360px
 .project__slider {
   position: relative;
   display: flex;
@@ -7,9 +7,9 @@
   padding: 2em 0;
   .right-arrow {
     position: absolute;
-    top: 45%;
-    right: 120px;
-    font-size: 3rem;
+    top: 44%;
+    right: 100px;
+    font-size: 2.5rem;
     color: #000;
     z-index: 10;
     cursor: pointer;
@@ -20,9 +20,9 @@
   }
   .left-arrow {
     position: absolute;
-    top: 45%;
-    left: 120px;
-    font-size: 3rem;
+    top: 44%;
+    left: 100px;
+    font-size: 2.5rem;
     color: #000;
     z-index: 10;
     cursor: pointer;
@@ -44,10 +44,12 @@
     display: flex;
     flex-direction: column;
     text-align: left;
-
+    &__text__container{
+      width: 300px;
+    }
     &__image {
       width: 100%;
-      height: 33vh;
+      height: 27vh;
       border-radius: 10px;
     }
     &__title {
@@ -56,14 +58,14 @@
       padding-top: 2.5em;
       margin: 0.5em 0;
       width: 50px;
-      font-size: $font-size-l;
+      font-size: $font-size-m;
     }
     &__subtitle {
       margin: 1em 0;
-      font-size: $font-size-m;
+      font-size: $font-size-s;
     }
     &__paragraph {
-      font-size: $font-size-s;
+      font-size: $font-size-xs;
     }
   }
   &__button__container {
@@ -73,16 +75,46 @@
     padding: 2em 0;
   }
 }
+
+// Mobile +480px
+@include mq(s) {
+  .project__slider {
+    .right-arrow {
+      right: 160px;
+    }
+    .left-arrow {
+      left: 160px;
+    }
+    &__card {
+      &__text__container{
+        width: 450px;
+      }
+      &__image {
+        height: 33vh;
+      }
+      &__title {
+        font-size: $font-size-l;
+      }
+      &__subtitle {
+        font-size: $font-size-m;
+      }
+      &__paragraph {
+        font-size: $font-size-s;
+      }
+    }
+  }
+}
+
 // Tablet +768px
 @include mq(m) {
   .project__slider {
     .right-arrow {
-      top: 25%;
-      right: -60px;
+      top: 51%;
+      right: 280px;
     }
     .left-arrow {
-      top: 25%;
-      left: -60px;
+      top: 51%;
+      left: 280px;
     }
     &__card {
       &__image {
@@ -101,9 +133,11 @@
 @include mq(l) {
   .project__slider {
     .right-arrow {
+      top: 25%;
       right: -80px;
     }
     .left-arrow {
+      top: 25%;
       left: -80px;
     }
     &__card {
@@ -117,6 +151,7 @@
   }
 }
 
+// Widescreen +1300px
 @include mq(xl) {
   .project__slider {
     .right-arrow {

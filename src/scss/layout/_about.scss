@@ -1,4 +1,4 @@
-// Mobile from 480px
+// Mobile +360px
 .about {
   height: 100vh;
   background-repeat: no-repeat;
@@ -15,15 +15,18 @@
     background-position: center;
     display: flex;
     flex-direction: column;
+
     &__image {
-      height: 440px;
-      width: 95%;
+      height: 274px;
+      width: 85%;
       border-radius: 50%;
-      margin: 1em 0;
+      margin-bottom: 1em 0;
     }
+
     &__header {
       color: $color-primary;
-      font-size: $font-size-l;
+      font-size: $font-size-m;
+      margin-top: 1em;
     }
     &__underline {
       border-bottom: 2px solid $color-primary;
@@ -32,20 +35,44 @@
     }
     &__description {
       text-align: left;
-      font-size: $font-size-s;
       letter-spacing: 2px;
-      width: 430px;
-      margin-bottom: 2em;
+      font-size: $font-size-xs;
+      width: 317px;
+    }
+    &__button {
+      display: flex;
+      justify-content: flex-start;
+      position: relative;
+      right: 10px;
+      margin-top: 1em;
     }
   }
 }
-// Tablet from 768px
+
+// Mobile +480px
+@include mq(s) {
+  .about {
+    &__container {
+      &__image {
+        height: 360px;
+      }
+      &__header {
+        font-size: $font-size-l;
+      }
+      &__description {
+        width: 430px;
+        font-size: $font-size-s;
+      }
+    }
+  }
+}
+
+// Tablet +768px
 @include mq(m) {
   .about {
     &__container {
       &__image {
-        height: 493px;
-        border-radius: 50%;
+        height: 440px;
       }
       &__description {
         width: 500px;
@@ -63,10 +90,12 @@
       &__image {
         height: 400px;
       }
+      &__text {
+        flex-direction: column;
+      }
+      &__button {
+        right: 8px;
+      }
     }
   }
-}
-
-// Widescreen from 1300px
-@include mq(xl) {
 }

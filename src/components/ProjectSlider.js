@@ -26,9 +26,7 @@ const ProjectSlider = () => {
     return null;
   }
   return (
-    <div
-      className="project__slider"
-    >
+    <div className="project__slider">
       <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
       <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
       {sliderData.map((project, id) => {
@@ -42,8 +40,11 @@ const ProjectSlider = () => {
             key={id}
           >
             {id === current && (
-              <div className="project__slider__card" data-aos="flip-right"
-      data-aos-duration="2000">
+              <div
+                className="project__slider__card"
+                data-aos="flip-right"
+                data-aos-duration="2000"
+              >
                 <img
                   className="project__slider__card__image"
                   src={project.image}
@@ -63,7 +64,7 @@ const ProjectSlider = () => {
                 <div className="project__slider__button__container">
                   <Button
                     href={project.live}
-                    size="large"
+                    size="medium"
                     color="secondary"
                     text="See Live"
                     target="_blank"
@@ -71,7 +72,7 @@ const ProjectSlider = () => {
                   />
                   <Button
                     href={project.source}
-                    size="large"
+                    size="medium"
                     color="secondary"
                     text="Source Code"
                     target="_blank"
