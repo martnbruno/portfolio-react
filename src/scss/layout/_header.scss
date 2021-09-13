@@ -12,12 +12,29 @@
   align-items: center;
   &__title {
     font-size: $font-size-m;
+    span {
+      color: $color-primary;
+    }
   }
   &__subtitle {
     padding: 1rem;
     font-size: $font-size-s;
     z-index: $z-normal;
     text-align: center;
+    span {
+      color: $color-primary;
+    }
+  }
+
+  &__icon {
+    cursor: pointer;
+    font-size: 3rem;
+    position: relative;
+    top: 50px;
+    color: #000;
+    &:hover {
+      color: $color-primary;
+    }
   }
 }
 
@@ -55,8 +72,9 @@
       width: 750px;
       text-align: left;
     }
-    &__button {
-      margin: 3rem !important;
+    &__icon {
+      top: 15rem;
+      left: 900px;
     }
   }
 }

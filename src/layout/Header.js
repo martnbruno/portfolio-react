@@ -1,26 +1,27 @@
 import React from "react";
 import Typical from "react-typical";
-import Button from "../components/Button";
+import { FiArrowDownCircle } from "react-icons/fi";
+import "animate.css";
 
 const Header = () => {
   return (
     <header className="header">
-      <h2 className="header__title">Hi! My name is Martin Bruno</h2>
+      <h2 className="header__title">
+        Hi! My name is <span>Martin Bruno</span>
+      </h2>
       <h3 className="header__subtitle">
         I'm a {""}
-        <Typical
-          steps={["Lawyer and...", 3000, "Frontend Developer!", 4000]}
-          loop={Infinity}
-          wrapper="b"
-        />
+        <span>
+          <Typical
+            steps={["Lawyer and...", 3000, "Frontend Developer!", 4000]}
+            loop={Infinity}
+            wrapper="b"
+          />
+        </span>
       </h3>
-      <Button
-        text="Learn More"
-        size="large"
-        color="secondary"
-        href="#about"
-        className="header__button"
-      ></Button>
+      <a href="#about">
+        <FiArrowDownCircle className="header__icon animate__animated animate__bounce animate__infinite" />
+      </a>
     </header>
   );
 };
