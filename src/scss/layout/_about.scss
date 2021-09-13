@@ -91,6 +91,8 @@
       gap: 3em;
       &__image {
         height: 400px;
+        width: 400px;
+        position: static;
       }
       &__text {
         flex-direction: column;
