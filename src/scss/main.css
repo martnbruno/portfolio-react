@@ -536,7 +536,8 @@ template {
 }
 
 .header__title {
-  font-size: 1.3rem;
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
 .header__title span {
@@ -544,10 +545,9 @@ template {
 }
 
 .header__subtitle {
-  padding: 1rem;
-  font-size: 1rem;
+  font-size: 2.5rem;
   z-index: 1;
-  text-align: center;
+  text-align: left;
 }
 
 .header__subtitle span {
@@ -557,8 +557,7 @@ template {
 .header__icon {
   cursor: pointer;
   font-size: 3rem;
-  position: relative;
-  top: 50px;
+  margin-top: 2em;
   color: #000;
 }
 
@@ -566,40 +565,43 @@ template {
   color: #e60856;
 }
 
-@media screen and (min-width: 480px) {
-  .header__title {
-    font-size: 2rem;
-  }
-  .header__subtitle {
-    font-size: 1.3rem;
-  }
-}
-
 @media screen and (min-width: 768px) {
+  .header__title {
+    font-size: 5rem;
+    text-align: center;
+  }
   .header__subtitle {
     width: 500px;
+    font-size: 4rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .header {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .header__title {
-    font-size: 3.5rem;
-    padding: 1rem 3rem;
+    font-size: 5rem;
+    width: 730px;
   }
   .header__subtitle {
-    padding: 0 3.2rem;
-    font-size: 2rem;
-    width: 750px;
-    text-align: left;
+    font-size: 4rem;
+  }
+  .header__icon__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .header__icon {
-    top: 15rem;
-    left: 900px;
+    position: static;
   }
 }
 
@@ -656,6 +658,7 @@ template {
   text-align: left;
   font-size: 0.8rem;
   width: 317px;
+  text-align: justify;
 }
 
 .about__container__button {
@@ -692,6 +695,7 @@ template {
   }
   .about__container__description {
     width: 500px;
+    font-size: 1.3rem;
   }
 }
 
@@ -713,6 +717,9 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .about__container__description {
+    font-size: 1.3rem;
   }
   .about__container__button {
     right: 8px;

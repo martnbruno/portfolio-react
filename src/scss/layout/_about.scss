@@ -37,6 +37,7 @@
       text-align: left;
       font-size: $font-size-xs;
       width: 317px;
+      text-align: justify;
     }
     &__button {
       display: flex;
@@ -78,6 +79,7 @@
       }
       &__description {
         width: 500px;
+        font-size: $font-size-m;
       }
     }
   }
@@ -96,6 +98,9 @@
       }
       &__text {
         flex-direction: column;
+      }
+      &__description {
+        font-size: $font-size-m;
       }
       &__button {
         right: 8px;
