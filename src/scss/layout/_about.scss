@@ -71,7 +71,10 @@
   .about {
     &__container {
       &__image {
-        height: 400px;
+        height: 300px;
+        width: 300px;
+        position: relative;
+        left: 100px;
       }
       &__description {
         width: 500px;
