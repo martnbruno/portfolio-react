@@ -17,8 +17,10 @@
     flex-direction: column;
 
     &__image {
-      height: 274px;
-      width: 85%;
+      height: 250px;
+      width: 250px;
+      position: relative;
+      left: 30px;
       border-radius: 50%;
       margin-bottom: 1em 0;
     }
@@ -45,6 +47,9 @@
       position: relative;
       right: 10px;
       margin-top: 1em;
+      &__link {
+        text-decoration: none;
+      }
     }
   }
 }
@@ -72,10 +77,9 @@
   .about {
     &__container {
       &__image {
-        height: 300px;
-        width: 300px;
-        position: relative;
-        left: 100px;
+        height: 400px;
+        width: 400px;
+        left: 60px;
       }
       &__description {
         width: 500px;
@@ -85,16 +89,17 @@
   }
 }
 
-// Desktop from 1024px
+// Desktop +1024px
 @include mq(l) {
   .about {
     &__container {
       flex-direction: row;
       gap: 3em;
       &__image {
-        height: 400px;
-        width: 400px;
-        position: static;
+        height: 450px;
+        width: 430px;
+        top: 80px;
+        left: 10px;
       }
       &__text {
         flex-direction: column;

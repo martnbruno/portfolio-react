@@ -62,22 +62,28 @@ const ProjectSlider = () => {
                   </p>
                 </div>
                 <div className="project__slider__button__container">
-                  <Button
+                  <a
                     href={project.live}
-                    size="medium"
-                    color="secondary"
-                    text="See Live"
                     target="_blank"
                     rel="noreferrer"
-                  />
-                  <Button
+                    className="project__slider__button__container__link"
+                  >
+                    {" "}
+                    <Button size="medium" color="secondary" text="See Live" />
+                  </a>
+                  <a
                     href={project.source}
-                    size="medium"
-                    color="secondary"
-                    text="Source Code"
                     target="_blank"
                     rel="noreferrer"
-                  />
+                    className="project__slider__button__container__link"
+                  >
+                    {" "}
+                    <Button
+                      size="medium"
+                      color="secondary"
+                      text="Source Code"
+                    />
+                  </a>
                 </div>
               </div>
             )}

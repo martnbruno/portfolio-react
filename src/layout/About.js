@@ -38,14 +38,14 @@ const About = () => {
             nowadays!
           </p>
           <div className="about__container__button">
-            <Button
-              text="Resume"
-              color="secondary"
-              size="small"
-              href="https://drive.google.com/file/d/1ZThQprj06TPHKOtBMeIywTg7Y8lAXUb0/view?usp=sharing"
-              target="_blank"
+            <a
               rel="noreferrer"
-            />
+              target="_blank"
+              href="https://drive.google.com/file/d/1ZThQprj06TPHKOtBMeIywTg7Y8lAXUb0/view?usp=sharing"
+              className="about__container__button__link"
+            >
+              <Button text="Resume" color="secondary" size="small" />
+            </a>
           </div>
         </div>
       </div>
