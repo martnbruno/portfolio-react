@@ -1,5 +1,5 @@
 import dine from "../assets/dine.jpg";
-import facedetector from "../assets/facedetector.gif";
+import facedetector from "../assets/facedetector.jpg";
 import portfolio from "../assets/portfolio.jpg";
 
 export const sliderData = [
