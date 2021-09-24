@@ -42,7 +42,7 @@ export const sliderData = [
     title:
       "Fullstack MERN app that provides users an easy management of ongoing projects and their daily tasks.",
     paragraph: "HTML, CSS, Javascript, React, Node, Express & MongoDB.",
-    live: "https://face-recognition-brain-v1.herokuapp.com/",
-    source: "https://github.com/martinbrunodev/face-recognition-brain",
+    live: "https://projectmentor.netlify.app/",
+    source: "https://github.com/martinbrunodev/project-mentor-client",
   },
 ];
