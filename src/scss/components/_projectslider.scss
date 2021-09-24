@@ -116,15 +116,16 @@
   .project__slider {
     .right-arrow {
       top: 55%;
-      right: 270px;
+      right: 250px;
     }
     .left-arrow {
       top: 55%;
-      left: 270px;
+      left: 180px;
     }
     &__card {
       &__image {
-        height: 40vh;
+        height: 30vh;
+        width: 50vh;
       }
       &__text__container {
         width: 550px;
@@ -148,7 +149,8 @@
     }
     &__card {
       &__image {
-        height: 40vh;
+        height: 35vh;
+        width: 60vh;
       }
       &__text__container {
         width: 500px;
@@ -168,7 +170,7 @@
     }
     &__card {
       &__image {
-        height: 45vh;
+        height: 33vh;
       }
     }
   }

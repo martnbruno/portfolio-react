@@ -1,6 +1,7 @@
 import dine from "../assets/dine.jpg";
 import facedetector from "../assets/facedetector.jpg";
 import portfolio from "../assets/portfolio.jpg";
+import projectmentor from "../assets/projectmentor.jpg";
 
 export const sliderData = [
   {
@@ -36,8 +37,8 @@ export const sliderData = [
   },
   {
     id: 4,
-    image: facedetector,
-    header: "Mern Project Administrator",
+    image: projectmentor,
+    header: "Project Mentor",
     title:
       "Fullstack MERN app that provides users an easy management of ongoing projects and their daily tasks.",
     paragraph: "HTML, CSS, Javascript, React, Node, Express & MongoDB.",
